@@ -1,0 +1,34 @@
+PS C:\> cd Users\sugut\Desktop\01_Samurai_kadai
+PS C:\Users\sugut\Desktop\01_Samurai_kadai>
+
+                                            cd kadai_git                           
+PS C:\Users\sugut\Desktop\01_Samurai_kadai\kadai_git> git init git_challenge  
+Initialized empty Git repository in C:/Users/sugut/Desktop/01_Samurai_kadai/kadai_git/git_challenge/.git/
+PS C:\Users\sugut\Desktop\01_Samurai_kadai\kadai_git> cd git_challenge
+PS C:\Users\sugut\Desktop\01_Samurai_kadai\kadai_git\git_challenge> echo "Hello,world">hello_world.txt
+PS C:\Users\sugut\Desktop\01_Samurai_kadai\kadai_git\git_challenge> git add hello_world.txt
+PS C:\Users\sugut\Desktop\01_Samurai_kadai\kadai_git\git_challenge> git commit -m "05930ff hello_world.txtを追加"
+[main (root-commit) b831738] 05930ff hello_world.txtを追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\Users\sugut\Desktop\01_Samurai_kadai\kadai_git\git_challenge> echo "こんにちは、世界!">hello_world.txt
+PS C:\Users\sugut\Desktop\01_Samurai_kadai\kadai_git\git_challenge> git add hello_world.txt
+PS C:\Users\sugut\Desktop\01_Samurai_kadai\kadai_git\git_challenge> git commit -m "38eed47(HEAD -> main) 日本語訳を追加"
+[main 389c1aa] 38eed47(HEAD -> main) 日本語訳を追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\sugut\Desktop\01_Samurai_kadai\kadai_git\git_challenge> git status
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\sugut\Desktop\01_Samurai_kadai\kadai_git\git_challenge> git diff hello_world.txt
+PS C:\Users\sugut\Desktop\01_Samurai_kadai\kadai_git\git_challenge> git log 
+commit 389c1aa1654c2bdf1bde8d426e0ff06ab6a56ed4 (HEAD -> main)
+Author: sdryuji <sdryuji13@gmail.com>
+Date:   Tue Nov 28 22:42:16 2023 +0900
+
+    38eed47(HEAD -> main) 日本語訳を追加
+
+commit b831738d54c1a6f5597a73209c1858157c6c2580
+Author: sdryuji <sdryuji13@gmail.com>
+Date:   Tue Nov 28 22:39:41 2023 +0900
+
+    05930ff hello_world.txtを追加
